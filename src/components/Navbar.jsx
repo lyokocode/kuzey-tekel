@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { AiOutlineClose, AiOutlineContacts, AiOutlineHome, AiOutlineInfoCircle, AiOutlineMenu, AiOutlineShoppingCart } from "react-icons/ai";
 import { Logo } from "../assets/Icon";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -29,12 +30,10 @@ export const Navbar = () => {
         <div className="relative bg-white  shadow-md max-h-20 " ref={modalRef} >
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="flex justify-between items-center border-b-2 border-gray-100 py-6  md:space-x-10">
-                    <div className="flex justify-start lg:w-0 lg:flex-1">
-                        <a href="#">
-                            <span className="sr-only">Kuzey Tekel</span>
-                            <Logo size={55} />
-                        </a>
-                    </div>
+                    {open ? ("") : <Link to="/" className="flex justify-start lg:w-0 lg:flex-1 z-20">
+                        <span className="sr-only">Kuzey Tekel</span>
+                        <Logo size={55} />
+                    </Link>}
                     <div className="-mr-2 -my-2 md:hidden">
                         <button
                             type="button"
@@ -46,21 +45,18 @@ export const Navbar = () => {
                         </button>
                     </div>
                     <nav className="hidden md:flex space-x-10">
-
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Home
-                        </a>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        </Link>
+                        <Link to="/product" className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Products
-                        </a>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        </Link>
+                        <Link to="/about" className="text-base font-medium text-gray-500 hover:text-gray-900">
                             About
-                        </a>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        </Link>
+                        <Link to="/contact" className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Contact
-                        </a>
-
-
+                        </Link>
                     </nav>
                 </div>
             </div>
@@ -76,9 +72,9 @@ export const Navbar = () => {
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                     <div className="pt-5 pb-6 px-5">
                         <div className="flex items-center justify-between">
-                            <div>
+                            <Link to="/" onClick={handleLinkClick}>
                                 <Logo size={50} />
-                            </div>
+                            </Link>
                             <div className="-mr-2">
                                 <button
                                     type="button"
@@ -94,25 +90,25 @@ export const Navbar = () => {
                         {/* mobile navbar  */}
                         <div className="mt-6">
                             <nav className="grid gap-y-8">
-                                <a href="#" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={handleLinkClick}>
+                                <Link to="/" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={handleLinkClick}>
                                     <AiOutlineHome size={25} color="#4f46e5" />
                                     <span className="ml-3 text-base font-medium text-gray-900"> Home </span>
-                                </a>
-                                <a href="#" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={handleLinkClick}>
+                                </Link>
+                                <Link to="/product" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={handleLinkClick}>
                                     <AiOutlineShoppingCart size={25} color="#4f46e5" />
                                     <span className="ml-3 text-base font-medium text-gray-900">
                                         Products
                                     </span>
-                                </a>
+                                </Link>
 
-                                <a href="#" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={handleLinkClick}>
+                                <Link to="/about" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={handleLinkClick}>
                                     <AiOutlineInfoCircle size={25} color="#4f46e5" />
                                     <span className="ml-3 text-base font-medium text-gray-900"> About </span>
-                                </a>
-                                <a href="#" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={handleLinkClick}>
+                                </Link>
+                                <Link to="/contact" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={handleLinkClick}>
                                     <AiOutlineContacts size={25} color="#4f46e5" />
                                     <span className="ml-3 text-base font-medium text-gray-900"> Contact </span>
-                                </a>
+                                </Link>
                             </nav>
                         </div>
                     </div>
