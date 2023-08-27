@@ -26,13 +26,13 @@ export const Navbar = () => {
     };
 
     return (
-        <div className="relative bg-white shadow-md" ref={modalRef}>
+        <div className="relative bg-white  shadow-md max-h-20 " ref={modalRef} >
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="flex justify-between items-center border-b-2 border-gray-100 py-6  md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
                         <a href="#">
                             <span className="sr-only">Kuzey Tekel</span>
-                            <Logo size={75} />
+                            <Logo size={55} />
                         </a>
                     </div>
                     <div className="-mr-2 -my-2 md:hidden">
@@ -66,11 +66,10 @@ export const Navbar = () => {
             </div>
 
             {/*Mobile menu*/}
-
             <div
                 className={
                     open
-                        ? "opacity-100 scale-100 transition ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+                        ? "opacity-100 scale-100  ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
                         : "opacity-0 scale-95 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
                 }
             >

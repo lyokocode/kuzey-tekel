@@ -1,6 +1,8 @@
 
 export const Home = () => {
     return (
-        <div>Home</div>
+        <div className="h-full ">
+            Home
+        </div>
     )
 }
