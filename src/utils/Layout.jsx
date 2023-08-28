@@ -6,7 +6,7 @@ export const Layout = () => {
     return (
         <main className=" w-full h-full min-h-screen">
             <Navbar />
-            <section className=" h-[calc(100vh-80px)]">
+            <section className=" h-[calc(100vh-80px)] overflow-auto">
                 <Outlet />
             </section>
         </main>
