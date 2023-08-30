@@ -43,7 +43,7 @@ export const products = [
         id: 3,
         name: "Tuborg Gold (Kutu)",
         category: "beer",
-        image: "/products/tuborg-amber.jpg"
+        image: "/products/tuborg-gold-kutu.jpg"
     },
     {
         id: 4,
@@ -56,6 +56,24 @@ export const products = [
         name: "Coco Cola",
         category: "soguk-icecek",
         image: "/products/coco-cola.jpg"
+    },
+    {
+        id: 6,
+        name: "Lays Yoğurt ve Mevsim Yeşillikli",
+        category: "atistirmalik",
+        image: "/products/lays-yogurt.jpg"
+    },
+    {
+        id: 7,
+        name: "Tuzlu Fıstık",
+        category: "cerez",
+        image: "/products/tuzlu-fistik.jpg"
+    },
+    {
+        id: 8,
+        name: "Red Bull",
+        category: "soguk-icecek",
+        image: "/products/redbull.jpg"
     },
 
 ]
