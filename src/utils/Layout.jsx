@@ -1,14 +1,16 @@
 import { Outlet } from "react-router-dom"
-import { Navbar } from "../components"
+import { Navbar, BottomBar } from "../components"
+import "../styles/index.scss"
 
 export const Layout = () => {
 
     return (
-        <main className=" w-full h-full min-h-screen">
+        <main className=" app ">
             <Navbar />
-            <section className=" h-[calc(100vh-80px)] overflow-auto">
+            <section className=" appContainer  overflow-auto">
                 <Outlet />
             </section>
+            <BottomBar />
         </main>
     )
 

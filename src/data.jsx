@@ -1,3 +1,40 @@
+import { AiOutlineContacts, AiOutlineHome, AiOutlineInfoCircle, AiOutlineShoppingCart } from "react-icons/ai"
+import { MdHomeRepairService } from "react-icons/md"
+
+export const navigationBar = [
+    {
+        id: 1,
+        name: "Anasayfa",
+        link: "/",
+        icon: <AiOutlineHome size={25} color="#4f46e5" />
+    },
+    {
+        id: 2,
+        name: "Ürünler",
+        link: "/products",
+        icon: <AiOutlineShoppingCart size={25} color="#4f46e5" />
+
+    },
+    {
+        id: 3,
+        name: "Hakkımızda",
+        link: "/about",
+        icon: <AiOutlineInfoCircle size={25} color="#4f46e5" />
+    },
+    {
+        id: 4,
+        name: "Hizmetler",
+        link: "/services",
+        icon: <MdHomeRepairService size={25} color="#4f46e5" />
+    },
+    {
+        id: 5,
+        name: "İletişim",
+        link: "/contact",
+        icon: <AiOutlineContacts size={25} color="#4f46e5" />
+    },
+]
+
 export const categories = [
     {
         id: 1,

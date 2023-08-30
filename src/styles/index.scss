@@ -18,6 +18,16 @@ body {
   height: 100vh;
 }
 
+.app {
+  width: 100vw;
+  height: 100vh;
+
+  .appContainer {
+    height: calc(100vh - 140px);
+  }
+
+}
+
 button {
   cursor: pointer;
 }

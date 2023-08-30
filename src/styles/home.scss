@@ -48,16 +48,27 @@
     }
 
     .slider {
-        height: 300px;
         width: 100%;
 
+
+
         figure {
-            height: 100%;
-            width: 1480px;
+            height: 400px;
+
+            @media only screen and (max-width: 768px) {
+                height: 350px;
+
+            }
+
+            @media only screen and (max-width: 408px) {
+                height: 300px;
+
+            }
 
             img {
+
                 width: 100%;
-                max-height: 300px;
+                max-height: 100%;
                 object-fit: contain;
             }
         }

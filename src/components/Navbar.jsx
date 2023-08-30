@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { AiOutlineClose, AiOutlineContacts, AiOutlineHome, AiOutlineInfoCircle, AiOutlineMenu, AiOutlineShoppingCart } from "react-icons/ai";
 import { Logo } from "../assets/Icon";
 import { Link } from "react-router-dom";
+import { navigationBar } from "../data";
 
 export const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -47,18 +48,14 @@ export const Navbar = () => {
                             </button>
                         </div>
                         <nav className="hidden md:flex space-x-4 " >
-                            <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900 px-4 py-2 rounded-md hover:bg-gray-300 transition duration-300 ease-in-out">
-                                Home
-                            </Link>
-                            <Link to="/product" className="text-base font-medium text-gray-500 hover:text-gray-900 px-4 py-2 rounded-md hover:bg-gray-300 transition duration-300 ease-in-out">
-                                Products
-                            </Link>
-                            <Link to="/about" className="text-base font-medium text-gray-500 hover:text-gray-900 px-4 py-2 rounded-md hover:bg-gray-300 transition duration-300 ease-in-out">
-                                About
-                            </Link>
-                            <Link to="/contact" className="text-base font-medium text-gray-500 hover:text-gray-900 px-4 py-2 rounded-md hover:bg-gray-300 transition duration-300 ease-in-out">
-                                Contact
-                            </Link>
+                            {
+                                navigationBar && navigationBar.map(navigation => (
+                                    <Link key={navigation.id} to={navigation.link} className="text-base font-medium text-gray-500 hover:text-gray-900 px-4 py-2 rounded-md hover:bg-gray-300 transition duration-300 ease-in-out">
+                                        {navigation.name}
+                                    </Link>
+                                ))
+                            }
+
                         </nav>
                     </div>
                 </div>
@@ -94,25 +91,15 @@ export const Navbar = () => {
                                     {/* mobile navbar  */}
                                     <div className="mt-6 md:hidden">
                                         <nav className="grid gap-y-8 ">
-                                            <Link to="/" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={handleLinkClick}>
-                                                <AiOutlineHome size={25} color="#4f46e5" />
-                                                <span className="ml-3 text-base font-medium text-gray-900"> Home </span>
-                                            </Link>
-                                            <Link to="/product" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={handleLinkClick}>
-                                                <AiOutlineShoppingCart size={25} color="#4f46e5" />
-                                                <span className="ml-3   text-base font-medium text-gray-900">
-                                                    Products
-                                                </span>
-                                            </Link>
 
-                                            <Link to="/about" className="-m-3 p-3 flex items-center  rounded-md hover:bg-gray-50" onClick={handleLinkClick}>
-                                                <AiOutlineInfoCircle size={25} color="#4f46e5" />
-                                                <span className="ml-3 text-base  font-medium text-gray-900"> About </span>
-                                            </Link>
-                                            <Link to="/contact" className="-m-3 p-3   flex items-center rounded-md hover:bg-gray-50" onClick={handleLinkClick}>
-                                                <AiOutlineContacts size={25} color="#4f46e5" />
-                                                <span className="ml-3 text-base font-medium text-gray-900"> Contact </span>
-                                            </Link>
+                                            {
+                                                navigationBar && navigationBar.map(navigation => (
+                                                    <Link key={navigation.id} to={navigation.link} className="-m-3 p-3   flex items-center rounded-md hover:bg-gray-50" onClick={handleLinkClick}>
+                                                        {navigation.icon}
+                                                        <span className="ml-3 text-base font-medium text-gray-900"> {navigation.name} </span>
+                                                    </Link>
+                                                ))
+                                            }
                                         </nav>
                                     </div>
                                 </div>
