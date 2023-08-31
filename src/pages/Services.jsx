@@ -1,4 +1,3 @@
-import React from 'react';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { regions } from '../data';
 import '../styles/services.scss';
@@ -16,7 +15,7 @@ export const Services = () => {
                         <article className="location" key={region.id}>
                             <h2 className="regionName">{region.name}</h2>
                             <span className="deliveryTime">
-                                {region.deliveryTime} dakika  <AiOutlineClockCircle className="clockIcon" />
+                                <AiOutlineClockCircle className="clockIcon" />  {region.deliveryTime} dakika
                             </span>
                             <ul className="neighborhoodList">
                                 {region.neighborhoods.map((neighborhood, i) => (

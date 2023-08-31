@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { GrSun, GrMoon } from "react-icons/gr";
 import { Logo } from "../assets/Icon";
 import { Link } from "react-router-dom";
 import { navigationBar } from "../data";
@@ -53,10 +54,11 @@ export const Navbar = () => {
                                     <Link key={navigation.id} to={navigation.link} className="text-base font-medium text-gray-500 hover:text-gray-900 px-4 py-2 rounded-md hover:bg-gray-300 transition duration-300 ease-in-out">
                                         {navigation.name}
                                     </Link>
+
                                 ))
                             }
-
                         </nav>
+
                     </div>
                 </div>
 

@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { About, Contact, Home, Products, Services } from "./pages"
 import { Layout } from './utils/Layout'
+import './styles/theme.scss'
 
 function App() {
 
