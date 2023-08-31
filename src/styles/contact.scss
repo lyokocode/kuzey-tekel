@@ -1,0 +1,73 @@
+.contactPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+
+
+
+    .contactDetails {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        height: 100%;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+
+        .leftDetails {
+            margin-bottom: 20px;
+            flex: 1;
+
+            h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 18px;
+                margin-bottom: 8px;
+
+                a {
+                    color: #007bff;
+                }
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    font-size: 18px;
+                    margin-bottom: 8px;
+
+                    a {
+                        color: #007bff;
+                    }
+                }
+            }
+        }
+
+        .rightMap {
+            flex: 1;
+
+            @media (max-width: 768px) {
+                max-height: 350px;
+            }
+
+            iframe {
+                width: 100%;
+                border: 0;
+            }
+        }
+    }
+}
