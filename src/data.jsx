@@ -114,3 +114,26 @@ export const products = [
     },
 
 ]
+
+export const sliders = [
+    {
+        id: 1,
+        image: "/slider/create.gif",
+        alt: "Kuzey tekel sipariş"
+    },
+    {
+        id: 2,
+        image: "/slider/delivery.gif",
+        alt: "Kuzey tekel sipariş"
+    },
+    {
+        id: 3,
+        image: "/slider/location.gif",
+        alt: "Kuzey tekel sipariş"
+    },
+    {
+        id: 4,
+        image: "/slider/location2.gif",
+        alt: "Kuzey tekel sipariş"
+    },
+]

@@ -1,5 +1,6 @@
 import Slider from "react-slick";
 import "../styles/home.scss"
+import { sliders } from "../data";
 
 export function Home() {
 
@@ -27,13 +28,16 @@ export function Home() {
             </div>
 
             <Slider {...settings} className="slider">
-                <figure>
-                    <img src='/delivery.gif' />
-                </figure>
 
-                <figure>
-                    <img src='/create.gif' />
-                </figure>
+                {
+                    sliders && sliders.map(slider => (
+                        <figure key={slider.id}>
+                            <img src={slider.image} alt={slider.alt} />
+                        </figure>
+
+                    ))
+                }
+
 
             </Slider>
         </section>

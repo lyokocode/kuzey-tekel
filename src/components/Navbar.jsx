@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { AiOutlineClose, AiOutlineContacts, AiOutlineHome, AiOutlineInfoCircle, AiOutlineMenu, AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Logo } from "../assets/Icon";
 import { Link } from "react-router-dom";
 import { navigationBar } from "../data";
