@@ -1,9 +1,8 @@
 import Slider from "react-slick";
-import "../styles/home.scss"
+import "../styles/home.scss";
 import { sliders } from "../data";
 
 export function Home() {
-
     const settings = {
         dots: true,
         infinite: true,
@@ -12,33 +11,22 @@ export function Home() {
         slidesToScroll: 1,
         autoplay: true,
         speed: 1000,
-        autoplaySpeed: 3000,
-        cssEase: "linear"
+        autoplaySpeed: 5000,
+        cssEase: "ease-in-out"
     };
 
     return (
-        <section className=" homePage">
-
-            <div className="content ">
-
-                <h1  >Hadi harika bir <span >Sipariş oluşturalım</span></h1>
-                <div className="text">
-                    <p >Sen ara biz getirelim. Tekel Bayii'n sadece bir telefon uzağında </p>
-                </div>
+        <section className="homePage">
+            <div className="content">
+                <h1>Hadi harika bir <span>Sipariş oluşturalım</span></h1>
+                <p>Sen ara biz getirelim. Tekel Bayii'n sadece bir telefon uzağında</p>
             </div>
-
             <Slider {...settings} className="slider">
-
-                {
-                    sliders && sliders.map(slider => (
-                        <figure key={slider.id}>
-                            <img src={slider.image} alt={slider.alt} />
-                        </figure>
-
-                    ))
-                }
-
-
+                {sliders.map(slider => (
+                    <figure key={slider.id}>
+                        <img src={slider.image} alt={slider.alt} />
+                    </figure>
+                ))}
             </Slider>
         </section>
     );

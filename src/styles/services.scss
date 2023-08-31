@@ -1,0 +1,82 @@
+.servicesPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+
+    .header {
+        text-align: center;
+        margin-bottom: 40px;
+        background-image: url('/header.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        width: 100%;
+        color: #fff;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+        .title {
+            font-size: 48px;
+            margin-bottom: 10px;
+
+        }
+
+        .description {
+            font-size: 24px;
+            color: #fff;
+        }
+    }
+
+    .contact {
+        width: 100%;
+        overflow: auto;
+
+        .locationContainer {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+
+            .location {
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                margin: 20px;
+                text-align: center;
+
+                .regionName {
+                    font-size: 24px;
+                    text-decoration: underline;
+                    margin-bottom: 10px;
+                }
+
+                .deliveryTime {
+                    font-size: 18px;
+                    color: #777;
+                    display: flex;
+                    align-items: center;
+
+                    .clockIcon {
+                        margin-left: 5px;
+                    }
+                }
+
+                .neighborhoodList {
+                    list-style: none;
+                    padding: 0;
+                    text-align: left;
+
+                    li {
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

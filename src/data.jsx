@@ -137,3 +137,47 @@ export const sliders = [
         alt: "Kuzey tekel sipariş"
     },
 ]
+
+
+export const regions = [
+    {
+        id: 1,
+        name: 'Bölge 1',
+        deliveryTime: 'tahmini teslimat: 20 - 25 dakika',
+        neighborhoods: [
+            'Bornova Merkez',
+            'Ergene Mahallesi',
+            'Erzene Mahallesi',
+            'Kızılay Mahallesi',
+            'Kazımdirik mahallesi',
+            'Atatürk Mahallesi',
+            'Özkanlar',
+            'Manavkuyu',
+            'Mansuroğlu mahallesi',
+
+        ]
+    },
+    {
+        id: 2,
+        name: 'Bölge 2 ',
+        deliveryTime: 'tahmini teslimat: 25 - 30 dakika',
+        neighborhoods: [
+            'Evka 3',
+            'Evka 4',
+            'İnönü mahallesi',
+            'Mevlânâ mahallesi',
+            'Doğanlar mahallesi',
+        ]
+    },
+    {
+        id: 3,
+        name: 'Bölge 3 ',
+        deliveryTime: 'tahmini teslimat: 30 - 35 dakika',
+        neighborhoods: [
+            'Yeşilova mahallesi',
+            'Karacaoğlan mahallesi',
+            'Rafet paşa mahallesi',
+            'Barbaros mahallesi',
+        ]
+    }
+];

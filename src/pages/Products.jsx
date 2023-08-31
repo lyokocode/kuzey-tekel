@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { categories, products } from "../data";
+import { ProductItem, CategoryItem } from "../components"
 import "../styles/products.scss"
 
-export const Product = () => {
+export const Products = () => {
 
     // const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
     // if (isDarkMode) {
@@ -35,28 +36,23 @@ export const Product = () => {
                         >
                             All
                         </li>
+
                         {categories.map((category) => (
-                            <li
+                            <CategoryItem
                                 key={category.id}
-                                className={`item ${selectedCategory === category.slug ? "active" : " "}`}
-                                onClick={() => handleCategoryClick(category.slug)}
-                            >
-                                {category.name}
-                            </li>
+                                category={category}
+                                selectedCategory={selectedCategory}
+                                handleCategoryClick={handleCategoryClick}
+                            />
                         ))}
+
                     </ul>
                 </div>
 
                 <div className=" products ">
                     <div className="content ">
                         {filteredProducts.map((product) => (
-                            <div key={product.id} className="item ">
-                                <img
-                                    src={product.image}
-                                    alt={product.name}
-                                />
-                                <p className="title ">{product.name} </p>
-                            </div>
+                            <ProductItem key={product.id} product={product} />
                         ))}
                     </div>
                 </div>

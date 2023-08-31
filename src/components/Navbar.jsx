@@ -35,7 +35,7 @@ export const Navbar = () => {
                     <div className="flex justify-between items-center border-b-2 max-h-20  border-gray-100 py-6   md:space-x-10">
                         {open ? ("") : <Link to="/" className="flex justify-start lg:w-0 lg:flex-1 z-20">
                             <span className="sr-only">Kuzey Tekel</span>
-                            <Logo size={55} />
+                            <Logo size={75} />
                         </Link>}
                         <div className="-mr-2 -my-2  md:hidden">
                             <button
