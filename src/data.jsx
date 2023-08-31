@@ -47,6 +47,26 @@ export const categories = [
         slug: "whiskey"
     },
     {
+        id: 9,
+        name: "Vodka",
+        slug: "vodka"
+    },
+    {
+        id: 7,
+        name: "Cin",
+        slug: "cin"
+    },
+    {
+        id: 8,
+        name: "Likör",
+        slug: "likör"
+    },
+    {
+        id: 6,
+        name: "Şaraplar",
+        slug: "sarap"
+    },
+    {
         id: 3,
         name: "Soğuk İçecekler",
         slug: "soguk-icecek"
@@ -61,6 +81,7 @@ export const categories = [
         name: "Atıştırmalık",
         slug: "atistirmalik"
     },
+
 ]
 
 export const products = [
@@ -87,6 +108,216 @@ export const products = [
         name: "Chivas Regal",
         category: "whiskey",
         image: "/products/chivas-regal.jpg"
+    },
+    {
+        id: 48,
+        name: "ballantines",
+        category: "whiskey",
+        image: "/products/ballantines.jpg"
+    },
+    {
+        id: 49,
+        name: "Jack Daniel's",
+        category: "whiskey",
+        image: "/products/jack-daniels.jpg"
+    },
+    {
+        id: 491,
+        name: "Benriach",
+        category: "whiskey",
+        image: "/products/benriach.jpg"
+    },
+    {
+        id: 45,
+        name: "Jameson",
+        category: "whiskey",
+        image: "/products/jameson.jpg"
+    },
+    {
+        id: 80,
+        name: "Black Label",
+        category: "whiskey",
+        image: "/products/black-label.jpg"
+    },
+    {
+        id: 81,
+        name: "Red Label",
+        category: "whiskey",
+        image: "/products/red-label.jpg"
+    },
+    {
+        id: 46,
+        name: "Jameson Black Barrel",
+        category: "whiskey",
+        image: "/products/black-barrel.jpg"
+    },
+    {
+        id: 40,
+        name: "Scotch Blue",
+        category: "whiskey",
+        image: "/products/scotch-blue.jpg"
+    },
+    {
+        id: 70,
+        name: "Jagermeister",
+        category: "likör",
+        image: "/products/jagermeister.jpg"
+    },
+    {
+        id: 72,
+        name: "Jagermeister Manifest",
+        category: "likör",
+        image: "/products/jagermeister-manifest.jpg"
+    },
+    {
+        id: 71,
+        name: "Jagermeister Cold Brew",
+        category: "likör",
+        image: "/products/jagermeister-cold-brew.jpg"
+    },
+    {
+        id: 90,
+        name: "Absolut",
+        category: "vodka",
+        image: "/products/absolut-vodka.jpg"
+    },
+    {
+        id: 91,
+        name: "Gilbey's",
+        category: "vodka",
+        image: "/products/gilbeys-vodka.jpg"
+    },
+    {
+        id: 92,
+        name: "İstan Blue",
+        category: "vodka",
+        image: "/products/istanblue-vodka.jpg"
+    },
+    {
+        id: 41,
+        name: "Beefeater",
+        category: "cin",
+        image: "/products/beefeater.jpg"
+    },
+    {
+        id: 42,
+        name: "Cork",
+        category: "cin",
+        image: "/products/cork.jpg"
+    },
+    {
+        id: 47,
+        name: "Malfy",
+        category: "cin",
+        image: "/products/malfy.jpg"
+    },
+    {
+        id: 482,
+        name: "Gordon",
+        category: "cin",
+        image: "/products/gordon.jpg"
+    },
+    {
+        id: 50,
+        name: "Chenet",
+        category: "sarap",
+        image: "/products/chenet-red.jpg"
+    },
+    {
+        id: 51,
+        name: "Chenet",
+        category: "sarap",
+        image: "/products/chenet-purple.jpg"
+    },
+    {
+        id: 52,
+        name: "Chenet (Rose)",
+        category: "sarap",
+        image: "/products/chenet-rose.jpg"
+    },
+    {
+        id: 53,
+        name: "Chenet",
+        category: "sarap",
+        image: "/products/chenet-green.jpg"
+    },
+    {
+        id: 54,
+        name: "Cape Spring",
+        category: "sarap",
+        image: "/products/cape-spring-yellow.jpg"
+    },
+    {
+        id: 57,
+        name: "Baron d'Arignac",
+        category: "sarap",
+        image: "/products/baron-darignac-red.jpg"
+    },
+    {
+        id: 55,
+        name: "Baron d'Arignac (Rose)",
+        category: "sarap",
+        image: "/products/baron-darignac-rose.jpg"
+    },
+    {
+        id: 56,
+        name: "770 Miles",
+        category: "sarap",
+        image: "/products/770-miles.jpg"
+    },
+    {
+        id: 59,
+        name: "Adelma ",
+        category: "sarap",
+        image: "/products/adelma.jpg"
+    },
+    {
+        id: 58,
+        name: "Adelma (Rose)",
+        category: "sarap",
+        image: "/products/adelma-rose.jpg"
+    },
+    {
+        id: 60,
+        name: "Pinot Noir",
+        category: "sarap",
+        image: "/products/pinot-noir.jpg"
+    },
+    {
+        id: 61,
+        name: "Nello",
+        category: "sarap",
+        image: "/products/nello.jpg"
+    },
+    {
+        id: 66,
+        name: "Küp",
+        category: "sarap",
+        image: "/products/küp.jpg"
+    },
+    {
+        id: 62,
+        name: "Villa Dolluca",
+        category: "sarap",
+        image: "/products/villa-dolluca.jpg"
+    },
+    {
+        id: 63,
+        name: "Villa Dolluca (Klasik)",
+        category: "sarap",
+        image: "/products/villa-dolluca-klasik.jpg"
+    },
+    {
+        id: 64,
+        name: "Villa Dolluca (Rose)",
+        category: "sarap",
+        image: "/products/villa-dolluca-rose.jpg"
+    },
+    {
+        id: 65,
+        name: "Dor",
+        category: "sarap",
+        image: "/products/dor.jpg"
     },
     {
         id: 5,
