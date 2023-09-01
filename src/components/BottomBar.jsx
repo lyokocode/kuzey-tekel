@@ -1,7 +1,24 @@
+import { useState } from "react";
 import "../styles/bottomBar.scss"
-import { AiOutlinePhone, AiOutlineWhatsApp } from 'react-icons/ai';
-
+import { AiOutlineClose, AiOutlinePhone, AiOutlineWhatsApp } from 'react-icons/ai';
+import { BsChevronDoubleRight } from "react-icons/bs"
 export const BottomBar = () => {
+
+    const [modal, setModal] = useState(true)
+
+    const modalToggle = () => {
+        setModal(!modal)
+    }
+
+    const handleCreateOrder = () => {
+        const phoneNumber = "905532768090"; // Phone Number
+        const message = encodeURIComponent(
+            "Merhaba, sipariş vermek istiyorum"
+        ); // Message
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+
+        window.location.href = whatsappUrl;
+    };
     return (
         <div className="bottomBar">
             <div className="contact phone">
@@ -11,14 +28,35 @@ export const BottomBar = () => {
             </div>
 
             <div className="created">
-                <p> © created by aelita</p>
+                <p> &copy; created by aelita</p>
             </div>
 
-            <div className="contact whatsapp">
-                <a href="https://wa.me/905532768090">
-                    <AiOutlineWhatsApp size={30} />
-                </a>
-            </div>
+            <button onClick={modalToggle} className="contact whatsapp">
+                <AiOutlineWhatsApp size={30} />
+            </button>
+
+            {modal && <>
+                <article className="whatsaapModal">
+                    <div className="whatsaapHeader">
+                        <div className="left">
+                            <AiOutlineWhatsApp size={25} />
+                            <span>WhatsApp</span>
+                        </div>
+                        <div className="right">
+                            <AiOutlineClose onClick={modalToggle} size={25} />
+                        </div>
+                    </div>
+                    <div className="chatBox">
+                        <div className="content">
+                            <div className="message">Merhaba, size nasıl yardımcı olabiliriz?</div>
+                        </div>
+                    </div>
+                    <button onClick={handleCreateOrder} className="sendMessage">
+                        <span>Sipariş verin</span>
+                        <BsChevronDoubleRight />
+                    </button>
+                </article>
+            </>}
 
         </div>
 
