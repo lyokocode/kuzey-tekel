@@ -2,15 +2,9 @@ import { useState } from "react";
 import { categories, products } from "../data";
 import { ProductItem, CategoryItem } from "../components"
 import "../styles/products.scss"
+import { Helmet } from "react-helmet";
 
 export const Products = () => {
-
-    // const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    // if (isDarkMode) {
-    //     alert("karanlık mod aktif");
-    // } else {
-    //     alert("karanlık mod aktif değil");
-    // }
 
     const [selectedCategory, setSelectedCategory] = useState(null);
 
@@ -24,6 +18,21 @@ export const Products = () => {
 
     return (
         <div className=" productPage  ">
+            {/* seo */}
+            <Helmet>
+                <title>Kuzey Tekel - Ürünler</title>
+                <meta
+                    name="description"
+                    content="Kuzey Tekel'de geniş bir ürün yelpazesi bulunmaktadır. Alkol, içecek ve daha fazlası için bizi ziyaret edin."
+                />
+                <meta
+                    name="keywords"
+                    content="Kuzey Tekel, tekel bayii, ürünler, içki, alkol, paket servis"
+                />
+                <meta name="robots" content="index, follow" />
+            </Helmet>
+
+            {/* product page */}
             <h1 className="title">Products</h1>
             <div className="productContainer">
 

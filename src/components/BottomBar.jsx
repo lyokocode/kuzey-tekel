@@ -4,7 +4,7 @@ import { AiOutlineClose, AiOutlinePhone, AiOutlineWhatsApp } from 'react-icons/a
 import { BsChevronDoubleRight } from "react-icons/bs"
 export const BottomBar = () => {
 
-    const [modal, setModal] = useState(true)
+    const [modal, setModal] = useState(false)
 
     const modalToggle = () => {
         setModal(!modal)
@@ -22,7 +22,7 @@ export const BottomBar = () => {
     return (
         <div className="bottomBar">
             <div className="contact phone">
-                <a href="">
+                <a href="tel:0123456789">
                     <AiOutlinePhone size={30} />
                 </a>
             </div>
