@@ -1,0 +1,5 @@
+https://kuzey-tekel.vercel.app
+https://kuzey-tekel.vercel.app/products
+https://kuzey-tekel.vercel.app/about
+https://kuzey-tekel.vercel.app/services
+https://kuzey-tekel.vercel.app/contact
