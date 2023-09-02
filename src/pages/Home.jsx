@@ -20,14 +20,14 @@ export function Home() {
         <section className="homePage">
             {/* seo */}
             <Helmet>
-                <title>Kuzey Tekel - İzmir Bornova Tekel Bayii</title>
+                <title>Kuzey Tekel - İzmir Bornova 24 Saat Açık Tekel Bayi</title>
                 <meta
                     name="description"
                     content="Kuzey Tekel, İzmir Bornova'da 24 saat hizmet veren tekel bayii. Geniş ürün yelpazesi ve paket servis hizmeti ile sizlere hizmet vermekten gurur duyarız."
                 />
                 <meta
                     name="keywords"
-                    content="Kuzey Tekel, tekel bayii, Bornova, İzmir, 24 saat açık, paket servis"
+                    content="açık tekel, tekel, tekel bayi, alkol, alkol fiyatları, şarap, rakı, bira, viski "
                 />
                 <meta name="robots" content="index, follow" />
             </Helmet>

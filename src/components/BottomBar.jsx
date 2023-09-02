@@ -23,7 +23,7 @@ export const BottomBar = () => {
         <div className="bottomBar">
             <div className="contact phone">
                 <a href="tel:0123456789">
-                    <AiOutlinePhone size={30} />
+                    <AiOutlinePhone size={30} name="phone" />
                 </a>
             </div>
 
@@ -32,7 +32,7 @@ export const BottomBar = () => {
             </div>
 
             <button onClick={modalToggle} className="contact whatsapp">
-                <AiOutlineWhatsApp size={30} />
+                <AiOutlineWhatsApp size={30} name="whatsApp" />
             </button>
 
             {modal && <>
@@ -53,7 +53,7 @@ export const BottomBar = () => {
                     </div>
                     <button onClick={handleCreateOrder} className="sendMessage">
                         <span>Sipariş verin</span>
-                        <BsChevronDoubleRight />
+                        <BsChevronDoubleRight name="whatsApp" />
                     </button>
                 </article>
             </>}

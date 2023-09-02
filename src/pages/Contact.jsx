@@ -16,6 +16,10 @@ export const Contact = () => {
                     name="keywords"
                     content="Kuzey Tekel, iletişim, sosyal medya, telefon, e-posta, adres"
                 />
+                <meta
+                    name="keywords"
+                    content=" alkol, bira, viski, vodka, rakı, şarap"
+                />
                 <meta name="robots" content="index, follow" />
             </Helmet>
             {/* contact page */}

@@ -27,7 +27,7 @@ export const Products = () => {
                 />
                 <meta
                     name="keywords"
-                    content="Kuzey Tekel, tekel bayii, ürünler, içki, alkol, paket servis"
+                    content="Kuzey Tekel, tekel bayii, ürünler, içki, alkol, paket servis, rakı, şarap, bira, viski, rom, cin, viski"
                 />
                 <meta name="robots" content="index, follow" />
             </Helmet>
