@@ -2,12 +2,12 @@ import { AiOutlineContacts, AiOutlineHome, AiOutlineInfoCircle, AiOutlineShoppin
 import { MdHomeRepairService } from "react-icons/md"
 
 export const navigationBar = [
-    {
-        id: 1,
-        name: "Anasayfa",
-        link: "/",
-        icon: <AiOutlineHome size={25} color="#4f46e5" />
-    },
+    // {
+    //     id: 1,
+    //     name: "Anasayfa",
+    //     link: "/",
+    //     icon: <AiOutlineHome size={25} color="#4f46e5" />
+    // },
     {
         id: 2,
         name: "Ürünler",
@@ -349,22 +349,22 @@ export const products = [
 export const sliders = [
     {
         id: 1,
-        image: "/slider/create.gif",
+        image: "/slider/kuzey-tekel.png",
         alt: "Kuzey tekel sipariş"
     },
     {
         id: 2,
-        image: "/slider/delivery.gif",
+        image: "/slider/kuzey-tekel-1.png",
         alt: "Kuzey tekel sipariş"
     },
     {
         id: 3,
-        image: "/slider/location.gif",
+        image: "/slider/kuzey-tekel-2.png",
         alt: "Kuzey tekel sipariş"
     },
     {
         id: 4,
-        image: "/slider/location2.gif",
+        image: "/slider/kuzey-tekel-3.png",
         alt: "Kuzey tekel sipariş"
     },
 ]

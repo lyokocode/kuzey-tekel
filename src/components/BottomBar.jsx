@@ -27,9 +27,9 @@ export const BottomBar = () => {
                 </a>
             </div>
 
-            <div className="created">
+            <a href="https://aelita.vercel.app" className="created">
                 <p> &copy; created by aelita</p>
-            </div>
+            </a>
 
             <button onClick={modalToggle} className="contact whatsapp">
                 <AiOutlineWhatsApp size={30} name="whatsApp" />

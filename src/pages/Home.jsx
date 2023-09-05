@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "../styles/home.scss";
 import { sliders } from "../data";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 export function Home() {
     const settings = {
@@ -34,8 +35,8 @@ export function Home() {
 
             {/* home page */}
             <div className="content">
-                <h1>Hadi harika bir <span>Sipariş oluşturalım</span></h1>
-                <p>Sen ara biz getirelim. Tekel Bayii'n sadece bir telefon uzağında</p>
+                <h1>Hadi kıyak bir <span>Sipariş oluşturalım</span></h1>
+                <p>{"Sen ara biz getirelim. Tekel Bayii'n sadece bir telefon uzağında"}</p>
             </div>
             <Slider {...settings} className="slider">
                 {sliders.map(slider => (
@@ -44,6 +45,36 @@ export function Home() {
                     </figure>
                 ))}
             </Slider>
+            <div className="cartContainer">
+                <Link to="/services" className="cart">
+                    <div className="imageContainer">
+                        <img src="/hero/delivery.gif" alt="" />
+                    </div>
+                    <span className="title">
+                        <h2>Hızlı & Güvenli teslimat </h2>
+                    </span>
+                </Link>
+
+                <Link to="/products" className="cart">
+                    <div className="imageContainer">
+                        <img src="/hero/products.jpg" alt="" />
+                    </div>
+                    <span className="title">
+                        <h2>Geniş ürün yelpazesi</h2>
+                    </span>
+                </Link>
+
+                <Link to="/" className="cart">
+                    <div className="imageContainer">
+                        <img src="/hero/izmir.jpg" alt="" />
+                    </div>
+                    <span className="title">
+                        <h2>Geniş teslimat bölgesi</h2>
+                        <h3>24 saat servis</h3>
+                    </span>
+                </Link>
+            </div>
         </section>
     );
 }
+7
