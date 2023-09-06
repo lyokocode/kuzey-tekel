@@ -11,9 +11,9 @@ export const BottomBar = () => {
     }
 
     const handleCreateOrder = () => {
-        const phoneNumber = "905532768090"; // Phone Number
+        const phoneNumber = "905524794249"; // Phone Number
         const message = encodeURIComponent(
-            "Merhaba, sipariş vermek istiyorum"
+            "Merhaba, sipariş vermek istiyorum."
         ); // Message
         const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
 
@@ -22,7 +22,7 @@ export const BottomBar = () => {
     return (
         <div className="bottomBar">
             <div className="contact phone">
-                <a href="tel:0123456789">
+                <a href="tel:+905524794249">
                     <AiOutlinePhone size={30} name="phone" />
                 </a>
             </div>
@@ -47,6 +47,7 @@ export const BottomBar = () => {
                         </div>
                     </div>
                     <div className="chatBox">
+
                         <div className="content">
                             <div className="message">Merhaba, size nasıl yardımcı olabiliriz?</div>
                         </div>
