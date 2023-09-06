@@ -32,8 +32,8 @@ export const Navbar = () => {
         <>
             <div className="relative bg-white  shadow-md  z-30" ref={modalRef}  >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
-                    <div className="flex justify-between items-center border-b-2 max-h-20  border-gray-100 py-6   md:space-x-10">
-                        {open ? ("") : <Link to="/" className="flex justify-start lg:w-0 lg:flex-1 z-20 " style={{ zoom: 1.4 }}>
+                    <div className=" flex justify-between items-center border-b-2 max-h-20  border-gray-100 py-6   md:space-x-10">
+                        {open ? ("") : <Link to="/" className=" flex justify-start  z-20 " style={{ zoom: 1.4 }}>
                             <span className="sr-only">Kuzey Tekel</span>
                             <Logo size={80} />
                         </Link>}
@@ -73,8 +73,8 @@ export const Navbar = () => {
                         open && (
                             <div className="rounded-lg shadow-lg ring-1   ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                                 <div className="pt-5 pb-6 px-5 ">
-                                    <div className="flex items-center justify-between ">
-                                        <Link to="/" onClick={handleLinkClick}>
+                                    <div className="flex  items-center justify-between ">
+                                        <Link to="/" onClick={handleLinkClick} className="flex-1">
                                             <Logo size={50} />
                                         </Link>
                                         <div className="-mr-2">
