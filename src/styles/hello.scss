@@ -1,0 +1,67 @@
+.hello {
+    background: rgb(17, 17, 17);
+    background: linear-gradient(119deg, rgba(17, 17, 17, 1) 15%, rgba(121, 91, 9, 0.9290091036414566) 85%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    z-index: 999;
+
+
+    h1 {
+        font-size: 50px;
+        font-weight: 800;
+        color: white;
+        position: relative;
+        -webkit-text-stroke: 2px #1c1917;
+
+        // &::before {
+        //     content: "Kuzey Tekel";
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     height: 100%;
+        //     width: 20%;
+        //     color: red;
+        //     -webkit-text-stroke: 0px #1c1917;
+        //     animation: animate 4s linear infinite;
+
+        // }
+    }
+
+    .text {
+        color: #e5e7eb;
+        font-size: 22px;
+
+    }
+
+    img {
+        width: 15%;
+        border-radius: 50%;
+        position: absolute;
+
+        @media only screen and (max-width: 768px) {
+            width: 30%;
+        }
+
+        @media only screen and (max-width: 450px) {
+            width: 35%;
+        }
+
+    }
+
+    .top {
+        top: 5%;
+        right: 5%;
+    }
+
+    .bottom {
+        bottom: 5%;
+        left: 5%;
+    }
+
+}

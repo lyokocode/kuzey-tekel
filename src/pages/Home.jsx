@@ -1,10 +1,26 @@
 import Slider from "react-slick";
 import "../styles/home.scss";
 import { sliders } from "../data";
+import { Hello } from "../components"
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export function Home() {
+
+    const [modalOpen, setModalOpen] = useState(false);
+
+    useEffect(() => {
+        setModalOpen(true);
+
+        const modalTimeout = setTimeout(() => {
+            setModalOpen(false);
+        }, 4000);
+
+        return () => {
+            clearTimeout(modalTimeout);
+        };
+    }, []);
     const settings = {
         dots: true,
         infinite: true,
@@ -33,6 +49,7 @@ export function Home() {
                 <meta name="robots" content="index, follow" />
             </Helmet>
 
+            <Hello />
             {/* home page */}
             <div className="content">
                 <h1>Hadi kıyak bir <span>Sipariş oluşturalım</span></h1>
@@ -64,7 +81,7 @@ export function Home() {
                     </span>
                 </Link>
 
-                <Link to="/" className="cart">
+                <Link to="/contact" className="cart">
                     <div className="imageContainer">
                         <img src="/hero/izmir.jpg" alt="" />
                     </div>

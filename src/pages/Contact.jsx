@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet"
 import "../styles/contact.scss"
-import { BsFacebook } from "react-icons/bs"
 
 export const Contact = () => {
     return (

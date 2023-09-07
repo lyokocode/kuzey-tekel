@@ -21,17 +21,17 @@ export const BottomBar = () => {
     };
     return (
         <div className="bottomBar">
-            <div className="contact phone">
+            <button className="contact phone" aria-label="Phone">
                 <a href="tel:+905524794249">
                     <AiOutlinePhone size={30} name="phone" />
                 </a>
-            </div>
+            </button>
 
             <a href="https://aelita.vercel.app" className="created">
                 <p> &copy; created by aelita</p>
             </a>
 
-            <button onClick={modalToggle} className="contact whatsapp">
+            <button onClick={modalToggle} className="contact whatsapp" aria-label="WhatsApp">
                 <AiOutlineWhatsApp size={30} name="whatsApp" />
             </button>
 
@@ -52,7 +52,7 @@ export const BottomBar = () => {
                             <div className="message">Merhaba, size nasıl yardımcı olabiliriz?</div>
                         </div>
                     </div>
-                    <button onClick={handleCreateOrder} className="sendMessage">
+                    <button onClick={handleCreateOrder} className="sendMessage" aria-label="WhatsApp send message">
                         <span>Sipariş verin</span>
                         <BsChevronDoubleRight name="whatsApp" />
                     </button>
