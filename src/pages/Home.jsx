@@ -49,7 +49,9 @@ export function Home() {
                 <meta name="robots" content="index, follow" />
             </Helmet>
 
-            <Hello />
+            {modalOpen && (
+                <Hello />
+            )}
             {/* home page */}
             <div className="content">
                 <h1>Hadi kıyak bir <span>Sipariş oluşturalım</span></h1>
