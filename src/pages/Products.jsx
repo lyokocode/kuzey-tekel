@@ -33,17 +33,17 @@ export const Products = () => {
             </Helmet>
 
             {/* product page */}
-            <h1 className="title">Products</h1>
+            <h1 className="title">Ürünlerimiz</h1>
             <div className="productContainer">
 
                 <div className="categories">
-                    <h2>Categories</h2>
+                    {/* <h2>Kategoriler</h2> */}
                     <ul className="list ">
                         <li
                             className={`item  ${!selectedCategory ? "active" : ""}`}
                             onClick={() => handleCategoryClick(null)}
                         >
-                            All
+                            Tümü
                         </li>
 
                         {categories.map((category) => (

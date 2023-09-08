@@ -15,12 +15,13 @@ export function Home() {
 
         const modalTimeout = setTimeout(() => {
             setModalOpen(false);
-        }, 4000);
+        }, 2500);
 
         return () => {
             clearTimeout(modalTimeout);
         };
     }, []);
+
     const settings = {
         dots: true,
         infinite: true,
@@ -65,7 +66,7 @@ export function Home() {
                 ))}
             </Slider>
             <div className="cartContainer">
-                <Link to="/services" className="cart">
+                <Link to="/hizmetler" className="cart">
                     <div className="imageContainer">
                         <img src="/hero/delivery.gif" alt="" />
                     </div>
@@ -74,7 +75,7 @@ export function Home() {
                     </span>
                 </Link>
 
-                <Link to="/products" className="cart">
+                <Link to="/ürünler" className="cart">
                     <div className="imageContainer">
                         <img src="/hero/products.jpg" alt="" />
                     </div>
@@ -83,7 +84,7 @@ export function Home() {
                     </span>
                 </Link>
 
-                <Link to="/contact" className="cart">
+                <Link to="/iletişim" className="cart">
                     <div className="imageContainer">
                         <img src="/hero/izmir.jpg" alt="" />
                     </div>

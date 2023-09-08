@@ -11,11 +11,16 @@ export const Hello = () => {
     };
 
     return (
-        <div style={flyingTextStyle} className='hello '>
-            <img className="top" src="/logo.png" alt="kuzey tekel logo" />
-            <h1 className="title">Kuzey Tekel</h1>
-            <p className="text">Aradığın tüm tekel ürünleri</p>
-            <img className="bottom" src="/loading.png" alt="kuzey tekel logo" />
+
+        <div style={flyingTextStyle} className="wrapper">
+            <img className="top helloImage" src="/logo.png" alt="kuzey tekel logo" />
+
+            <div className="typing-demo">
+                Kuzey Tekel
+            </div>
+            <p className="text">Aradığın tüm tekel ürünleri...</p>
+            <img className="bottom helloImage" src="/loading.png" alt="kuzey tekel logo" />
+
         </div>
     )
 }
