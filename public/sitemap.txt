@@ -1,5 +1,5 @@
-https://kuzey-tekel.vercel.app
-https://kuzey-tekel.vercel.app/products
-https://kuzey-tekel.vercel.app/about
-https://kuzey-tekel.vercel.app/services
-https://kuzey-tekel.vercel.app/contact
+https://kuzeytekel.com
+https://kuzeytekel.com/products
+https://kuzeytekel.com/about
+https://kuzeytekel.com/services
+https://kuzeytekel.com/contact
