@@ -15,7 +15,7 @@ export function Home() {
 
         const modalTimeout = setTimeout(() => {
             setModalOpen(false);
-        }, 2500);
+        }, 2000);
 
         return () => {
             clearTimeout(modalTimeout);

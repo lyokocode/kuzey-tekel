@@ -29,10 +29,10 @@ export const Contact = () => {
                     <h1>İletişim Bilgileri</h1>
                     <ul>
                         <li>
-                            <h3>Facebook:</h3> <a href="#">@kuzeytekel</a>
+                            <h3>Facebook:</h3> <a href="https://www.facebook.com/kuzey.tekel.52/?locale=fo_FO" target="_blank" rel="noreferrer">@kuzeytekel</a>
                         </li>
                         <li>
-                            <h3>Instagram:</h3> <a href="#">@kuzeytekel</a>
+                            <h3>Instagram:</h3> <a href="https://www.instagram.com/kuzeytekelshop/" target="_blank" rel="noreferrer">@kuzeytekel</a>
                         </li>
 
                     </ul>

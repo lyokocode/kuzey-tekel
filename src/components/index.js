@@ -1,5 +1,5 @@
 export { Navbar } from "./Navbar"
-export { BottomBar } from "./BottomBar"
+export { Footer } from "./Footer"
 export { ProductItem } from "./ProductItem"
 export { CategoryItem } from "./CategoryItem"
 export { Hello } from "./Hello"

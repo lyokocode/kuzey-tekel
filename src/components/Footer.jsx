@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../styles/bottomBar.scss"
 import { AiOutlineClose, AiOutlinePhone, AiOutlineWhatsApp } from 'react-icons/ai';
 import { BsChevronDoubleRight } from "react-icons/bs"
-export const BottomBar = () => {
+export const Footer = () => {
 
     const [modal, setModal] = useState(false)
 
@@ -27,7 +27,7 @@ export const BottomBar = () => {
                 </a>
             </button>
 
-            <a href="https://aelita.vercel.app" className="created">
+            <a href="https://aelita.vercel.app" target="_blank" rel="noreferrer" className="created">
                 <p> &copy; created by aelita</p>
             </a>
 

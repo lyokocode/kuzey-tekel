@@ -1,4 +1,5 @@
 import "../styles/hello.scss"
+
 export const Hello = () => {
 
     const flyingTextStyle = {
